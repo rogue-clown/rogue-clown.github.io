@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Background image is in the public domain: https://en.wikipedia.org/wiki/The_Acclaimed#/media/File:Billy_Gunn_and_the_Acclaimed.jpg -->
+    <title>play rock paper scissors with The Acclaimed!</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1>rock paper scissor me!</h1>
+    </div>
+    <div class="game-container">
+        <div class="output-container">
+            <div class="picks-container">
+                <div class="player-pick">The Acclaimed: <span id="computer-choice"></span></div>
+                <div class="player-pick">You: <span id="user-choice"></span></div>
+            </div>
+            <div class="result-container">
+                <div class="game-result"><span id="result"></span></div>
+            </div>
+
+            <div class="buttons-container">
+                <button id="rock">
+                    <i class="fa-solid fa-hand-back-fist" id="rock"></i>
+                </button>
+                <button id="paper">
+                    <i class="fa-solid fa-hand" id="paper"></i>
+                </button>
+                <button id="scissors">
+                    <i class="fa-solid fa-hand-scissors" id="scissors"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
