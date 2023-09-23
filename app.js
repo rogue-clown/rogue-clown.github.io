@@ -40,7 +40,7 @@ function generateComputerChoice() {
 
 function failure() {
 
-    const failMessages = ["seriously?", "are you kidding me?", "ask yourself the point of this game.", "that one's no fun...", "have you met The Acclaimed?", "this won't win you any belts.", "what would The Acclaimed do?"]
+    const failMessages = ["seriously?", "are you kidding me?", "ask yourself the point of this game.", "that one's no fun...", "have you met The Acclaimed?", "this won't win you any belts.", "not familiar with that one...", "what would The Acclaimed do?"]
 
     const randomNumber = Math.floor(Math.random() * failMessages.length);
 
