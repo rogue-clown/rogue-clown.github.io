@@ -38,18 +38,27 @@ function generateComputerChoice() {
     computerChoiceDisplay.innerHTML = "scissors";
 }
 
-function failure() {
+function paper() {
 
-    const failMessages = ["seriously?", "are you kidding me?", "ask yourself the point of this game.", "that one's no fun...", "have you met The Acclaimed?", "this won't win you any belts.", "not familiar with that one...", "what would The Acclaimed do?"]
+    const paperMessages = ["seriously?", "are you kidding me?", "ask yourself the point of this game.", "that one's no fun...", "have you met The Acclaimed?", "this won't win you any belts.", "not familiar with that one...", "what would The Acclaimed do?"]
+    
+    const randomNumber = Math.floor(Math.random() * paperMessages.length);
 
-    const randomNumber = Math.floor(Math.random() * failMessages.length);
+    return paperMessages[randomNumber];
+}
 
-    return failMessages[randomNumber];
+function rock() {
+
+    const rockMessages = ["it does matter what Daddy Ass's name is!", "no one's cooking anything today.", "no, not that guy who slandered Daddy Ass in '99!", "seriously?", "are you kidding me?", "ask yourself the point of this game.", "that one's no fun...", "have you met The Acclaimed?", "this won't win you any belts.", "not familiar with that one...", "what would The Acclaimed do?"]
+
+    const randomNumber = Math.floor(Math.random() * rockMessages.length);
+
+    return rockMessages[randomNumber];
 }
 
 function success() {
 
-    const successMessages = ["OH, SCISSOR ME DADDY!", "SCISSOR ME, DADDY ASS!", "EVERYONE LOVES THE ACCLAIMED!"]
+    const successMessages = ["OH, SCISSOR ME DADDY!", "SCISSOR ME, DADDY ASS!", "EVERYONE LOVES THE ACCLAIMED!", "✂️✂️✂️"]
 
     const randomNumber = Math.floor(Math.random() * successMessages.length);
 
@@ -76,9 +85,9 @@ function getResult() {
     if (userChoice === "scissors") {
         result = success();
     } else if (userChoice === "rock") {
-        result = failure();
+        result = rock();
     } else if (userChoice === "paper") {
-        result = failure();
+        result = paper();
     };
 
     resultDisplay.innerHTML = result;
